@@ -15,7 +15,7 @@ for line in file.readlines():
     else :
         data_Mat.append(part_Mat)
         part_Mat = []
-#print('data_Mat:',data_Mat)
+# print('data_Mat:',data_Mat)
 
 for list1 in data_Mat:
     for list2 in list1:
@@ -26,7 +26,7 @@ for list1 in data_Mat:
                 dict1[keylist[i]] = list2[i:]
         all_list.append(dict1)
         dict1 = collections.OrderedDict()
-#print(all_list)
+# print(all_list)
 
 outputfile=open('result1.json','w',encoding='utf-8')
 for index,d in enumerate(all_list):
